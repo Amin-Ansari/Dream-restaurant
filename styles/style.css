@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: 0px;
+  text-decoration: none !important;
+  font-family: "Noto Sans Arabic", sans-serif;
+}
+.theme-bg {
+  background-color: #35b8be;
+}
+.header-back-img {
+  background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa36d5976b5d3_Banner%20Wave.svg");
+  background-repeat: none;
+  background-position: center center;
+  background-size: contain;
+  font-weight: 400;
+  color: #d6f1f2;
+  cursor: default;
+  padding: 11px 0px;
+}
+.header-back-img a {
+  cursor: pointer;
+}
