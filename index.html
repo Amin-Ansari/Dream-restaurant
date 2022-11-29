@@ -25,32 +25,13 @@
     />
   </head>
   <body>
-    <ul
-      class="container-fluid navbar-nav nav d-flex d-lg-none pt-2 out-of-view sub-box-shadow"
-    >
-      <li class="nav-item">
-        <a href="index.html" class="nav-link p-side selected-link">صفحه اصلی</a>
-      </li>
-      <li class="nav-item">
-        <a href="index.html" class="nav-link p-side dark-text">سفارشات</a>
-      </li>
-      <li class="nav-item">
-        <a href="index.html" class="nav-link p-side dark-text">سوالات متداول</a>
-      </li>
-      <li class="nav-item">
-        <a href="index.html" class="nav-link p-side dark-text">درباره ما</a>
-      </li>
-      <li class="nav-item">
-        <a href="index.html" class="nav-link p-side dark-text">تماس با ما</a>
-      </li>
-    </ul>
     <div
       class="container-fluid theme-bg text-center d-none d-sm-block header-back-img"
     >
       ما آماده پذیرش و ارسال سفارش های شما میباشیم.
       <a href="order.html" class="text-white">سفارش دهید</a>
     </div>
-    <nav class="container-fluid p-1 pt-2 pb-2 border">
+    <nav class="container-fluid p-1 pt-2 pb-2 border position-relative">
       <div class="container d-flex justify-content-between">
         <div class="navbar navbar-expand-sm p-0">
           <a href="index.html" class="navbar-brand d-inline-block">
@@ -83,7 +64,7 @@
             <i class="fa-solid fa-cart-shopping"></i>
           </button>
           <button
-            class="btn gray-btn button-padd d-inline-block d-lg-none overflow-hidden"
+            class="btn gray-btn button-padd d-inline-block d-lg-none overflow-hidden toggle-button"
           >
             <span class="bars d-block"></span>
             <span class="bars d-block middle-bar"></span>
@@ -91,11 +72,55 @@
           </button>
         </div>
       </div>
+      <div
+        class="container-fluid p-0 overflow-hidden position-absolute container-pos d-flex d-lg-none"
+      >
+        <ul
+          class="container-fluid navbar-nav nav pt-2 out-of-view sub-box-shadow"
+        >
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link p-side d-inline-block mt-3 mb-3 selected-link"
+              >صفحه اصلی</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link p-side d-inline-block mt-3 mb-3 dark-text"
+              >سفارشات</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link p-side d-inline-block mt-3 mb-3 dark-text"
+              >سوالات متداول</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link p-side d-inline-block mt-3 mb-3 dark-text"
+              >درباره ما</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link p-side d-inline-block mt-3 mb-3 dark-text"
+              >تماس با ما</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
+    <script defer src="output/final.js"></script>
   </body>
 </html>
