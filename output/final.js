@@ -1,0 +1,1 @@
+(()=>{"use strict";const t=document.querySelector(".toggle-button"),e=document.querySelector(".out-of-view");t.addEventListener("click",(function(){!function(){t.classList.toggle("theme-bg");const e=t.children;for(let t of e)t.classList.toggle("toggled-bar")}(),e.classList.toggle("out-of-view")}))})();
