@@ -87,8 +87,16 @@ button.patern-theme {
 .theme-bg {
   background-color: #35b8be !important;
 }
+.theme-color {
+  color: #35b8be !important;
+}
 .container-pos {
   right: 0px;
   top: 74px;
   height: 100vh;
+}
+span.cart-pos {
+  top: -6px !important;
+  right: -6px;
+  box-shadow: rgba(56, 56, 56, 0.425) 0px 1px 5px;
 }
