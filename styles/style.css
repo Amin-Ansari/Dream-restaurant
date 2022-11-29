@@ -70,3 +70,17 @@ button.patern-theme {
 .toggled-bar:nth-child(3) {
   transform: translate(0px, -8px) rotate(45deg);
 }
+.p-side {
+  padding-right: 15px !important;
+  padding-top: 20px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+}
+.sub-box-shadow {
+  box-shadow: 0 50px 80px -30px rgba(53, 52, 72, 0.2);
+  transition: all 0.4s;
+  position: absolute;
+}
+.out-of-view {
+  transform: translateY(-300px);
+}
