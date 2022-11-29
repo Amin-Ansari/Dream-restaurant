@@ -7,7 +7,7 @@
   font-family: "Noto Sans Arabic", sans-serif;
 }
 .theme-bg {
-  background-color: #35b8be;
+  background-color: #35b8be !important;
 }
 .header-back-img {
   background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa36d5976b5d3_Banner%20Wave.svg");
@@ -21,4 +21,52 @@
 }
 .header-back-img a {
   cursor: pointer;
+}
+.logo-style {
+  height: 4vw;
+  min-height: 45px;
+  max-height: 51.5px;
+}
+a.nav-link {
+  font-weight: 500;
+  font-size: 0.96rem;
+  transition: all 0.4s;
+}
+.selected-link {
+  color: #35b8be !important;
+}
+.dark-text {
+  color: #5a576d;
+}
+button.button-padd {
+  align-self: center;
+  padding: 12px 17px;
+}
+button.button-padd:nth-of-type(2) {
+  padding: 14px 13px;
+}
+button.patern-theme {
+  background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3345876b5c4_Button%20Wave.svg");
+}
+.gray-btn {
+  background: #eaeff1 !important;
+}
+.bars {
+  background-color: rgb(53, 53, 53);
+  height: 3px !important;
+  width: 25px;
+  border-radius: 20px;
+  transition: all 0.45s;
+}
+.middle-bar {
+  margin: 5px 0px;
+}
+.toggled-bar:nth-child(1) {
+  transform: translate(0px, 7.5px) rotate(-45deg);
+}
+.toggled-bar:nth-child(2) {
+  transform: translate(-50px, 0px);
+}
+.toggled-bar:nth-child(3) {
+  transform: translate(0px, -8px) rotate(45deg);
 }
