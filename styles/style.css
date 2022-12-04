@@ -100,3 +100,48 @@ span.cart-pos {
   right: -6px;
   box-shadow: rgba(56, 56, 56, 0.425) 0px 1px 5px;
 }
+.off-canvas-container {
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  right: 0px;
+  background-color: #33333360;
+  transition: all 0.3s;
+}
+.off-canvas {
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  transition: all 0.3s;
+}
+.off-canvas h2 {
+  font-weight: 700;
+  color: #1f1f1f;
+}
+.off-canvas-header {
+  padding: 10px 10px 10px 0px !important;
+}
+.title-off-canvas {
+  font-size: 5vw !important;
+}
+.close-style {
+  font-size: 1.5rem !important;
+  color: #4b4b4b !important;
+}
+.off-canvas-content {
+  height: 100%;
+}
+.btn-start-style {
+  background: #36b7bd !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-weight: 600 !important;
+  font-size: 1.12rem !important;
+  background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3345876b5c4_Button%20Wave.svg") !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+.empty-p {
+  font-size: 1.1rem;
+  font-weight: 400 !important;
+}

@@ -122,6 +122,31 @@
         </ul>
       </div>
     </nav>
+    <div class="container-fluid position-fixed off-canvas-container m-0 p-0">
+      <div class="off-canvas bg-white">
+        <div
+          class="off-canvas-header d-flex justify-content-between align-items-center border-bottom-1 border"
+        >
+          <h2 class="title-off-canvas m-0">سبد خرید شما</h2>
+          <button type="button" class="btn close-style">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div
+          class="off-canvas-content d-flex flex-column justify-content-center align-items-center"
+        >
+          <p class="empty-p mb-4">سبد خرید شما خالی میباشد</p>
+          <button class="btn btn-start-style text-white mb-1">
+            سفارش اضافه کنید
+          </button>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAA1CAYAAADbNhwDAAAFjElEQVR4Xu2aTXLbNhSAAUptmp17gioniD1jd7qUknZqJ4tGN5BO0OgEiU5g5wRxTmB70didNpG668SeKXOCsCcod5k0FtH3wB+BIEiAIiFXCTjjhYfAA/Dh/VOUuMcKAWpFqhNKHFhLSuDAOrCWCFgS6zTWgbVEwJJYp7EOrCUClsQ6jV0X2L2L2SEjpEcXZHr5cOBbWveTF5vT2L1fZtukw/5anpoeXe4PJp88BQsHzIHdffnqMfXoYXEdB7gu+7zGXryegYB+uRAH2BRwBrboBkpF+GRBx87/ViPOwO7+OntCGXuaDmeEnnrR4gXzOj8RwkayGBpFwzcPvj81vcHPbdxSYy9ev4PD9zKwbDG4Ovhhjv/H2kx+lgCHHUZ3/jwYBJ8bNJPzcrCyG0BtvdofDGUBRcD0GLKGsclCpmO2T2Zb3a+ut3F8l3SDTb04DlZ2AzozFwD3LvfvDUyhVY1DoF/cJk/AKh6JlhPP2bygGWts3g34AGunDVimMhKLOSkCXUoosyLTNdYxbvf8tz6lnUNQzCmNNYX9k/nWiE2uHtw/Sv+Pc1vvG1uFQrI++vct3eF1lqSbb/M9VqxgbY9hjRD2Oaayf4WAdEf0a6DNCH3LlsbIbqjq8Lb20AR44sIQ6iiFitlSqrFYxvbgr+AGcm5iQXfazF812gp9Coq9ijDZNNdo+eKbQGk6twwqjwrcxybpFIuit6IbiP3v7PkyzWo3C0h8ElZ74hOyiE2vP3jH/nAAUPPBFd7lXFVTOKvO59nLbfKcxsGWyPvStg33zl+NCKUAlz8hBLavV92MPE/Vm1D5UcF/kf+DO5ChqrIWLVg5uBHGxpcH94/bgCsC47delj8LVnPTYIsZDD3++J5MUutKuWjBclO8mJ2kKt+m1prmz9L687Zy57rKkbguTAvTDMb/+J4OZKgo1wjsd+ez3oIyTIn4wyh9evXjYFp3YwVXIPUnVIFJEeBuBGzitqCAyaBWlvRGYBFIPoiRVvoEsptRgS2mY+utwoSKEHPU9AkZWwzTXopKwYzBJhDStAxlBdA+HDZNv9I8OTaFvP9WrFkY09RqquYXgxQfzQsAXWfPGCxKlF1CzGLZBVvlkFIAy/JoKUfMRK8rj02CFH5N6YuaagIVx9cCixNUuWeT3FJ2B5hu/fuhM4eGTFrNiPfVarqnUgTB9EfwXiyzjTQ1lVkbLE789uXvj5jnYXQUHx/U99kqqZjkv1EmVly8dSg+TS7QxJqSc6GW9qTxc7CUcZ0W5kpgcVE5B81vhB4xdn1W5dzF8YVcWU0hgNRmR5XamECrGpNYIUb8fnEcPYI8dVp33ZXB4gYMGygBJPU+OB0fzPxvxvJdLOycgafGAxU0NKetDX25CmyF2eNwXlrLJb7pJTYCy+HGPUi53jddH3oB9BR+ILIFG0mbLaq5ARQFd0yF6sbxaH8rGsGnfvjcVDB7DtU0SJWt1RgsCi6L4LoDJu+x0aLtxcIYHwqT025EXtTxdeIeYiXoph9Hy9b0IdOZmLoxq2BT4SUpiiHfWsPm2FKk0eIPxjqBKpfml/0l6TEa9Q3dTaGrVmtH0uBWNFbegGBqoB1VPwBRbj3g7oGCOQqf4w0OCfOyR9RGH3x8KPQ6VKLmUOxMmhY7omArYOWd88KCRH1CvbsQqDBI9RLzRzcQwsEDHtyuyZl4uLgg4R8YRwZgsyHYAcN/ACauk66lEhFCijhZJUXU7WctYHWb0L0v+V2DblrV+1bNXrXQRoAVN550mVZxMShmDinUmfh1osntVM3dOLDiYbBSijqdu9Ah3wazRxcjR/r4uxmL3pLI89v0oboL2WiwusPd5HsH1hJ9B9aBtUTAklinsQ6sJQKWxDqNdWAtEbAk1mmsA2uJgCWx/wEWfdtE72B26wAAAABJRU5ErkJggg=="
+            alt="Attention arrow"
+            class="d-block mb-5"
+          />
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
