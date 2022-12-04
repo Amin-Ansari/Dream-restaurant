@@ -1,0 +1,26 @@
+.off-canvas-appear {
+  animation: clearOpa 0.4s ease 0s 1 normal forwards;
+}
+
+.off-canvas-content-appear {
+  animation: translateSide 0.4s ease 0s 1 normal forwards;
+}
+
+@keyframes clearOpa {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes translateSide {
+  0% {
+    transform: translateX(480px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
