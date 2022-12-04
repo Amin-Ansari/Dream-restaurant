@@ -2,6 +2,7 @@ import { toggleButton } from "./elements";
 import { hiddenMenu } from "./elements";
 import { cartButton } from "./elements";
 import { offCavas } from "./elements";
+import { outViewContainer } from "./elements";
 
 function styleChange() {
   toggleButton.classList.toggle("theme-bg");
@@ -13,6 +14,7 @@ function styleChange() {
 function subShow() {}
 export function toggleSub() {
   styleChange();
+  outViewContainer.classList.replace("out-of-view-container", "height-grow");
   hiddenMenu.classList.toggle("out-of-view");
 }
 export function toggleCart() {

@@ -77,7 +77,7 @@ button.patern-theme {
 }
 .sub-box-shadow {
   box-shadow: 0 50px 80px -30px rgba(53, 52, 72, 0.2);
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in 0.2s;
   transform: translateY(0px);
   height: max-content !important;
 }
@@ -144,4 +144,18 @@ span.cart-pos {
 .empty-p {
   font-size: 1.1rem;
   font-weight: 400 !important;
+}
+.intro-section {
+  padding: 30px;
+  background: transparent
+    url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3306c76b60a_BG%20Shape.svg")
+    no-repeat center center !important;
+  background-size: cover;
+}
+.out-of-view-container {
+  height: 0px !important;
+  transition: none;
+}
+.height-grow {
+  height: 100vh !important;
 }
