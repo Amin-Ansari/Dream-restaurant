@@ -219,7 +219,7 @@ span.cart-pos {
   background-position: left bottom;
 }
 .suport-text {
-  font-size: 10.04vw !important;
+  font-size: 8.04vw !important;
   font-weight: bolder;
 }
 .suport-text span {
@@ -234,4 +234,8 @@ span.cart-pos {
   background: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3710276b5d2_Group%20Photo.png")
     no-repeat center center;
   background-size: cover;
+}
+.order-btn-submit {
+  font-weight: 600 !important;
+  padding: 12px 18px !important;
 }
