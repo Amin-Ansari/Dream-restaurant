@@ -1,3 +1,6 @@
 a.dark-text:hover {
   color: rgb(66, 64, 73);
 }
+.intro-link-padding:hover {
+  background-color: #31a7ad !important;
+}
