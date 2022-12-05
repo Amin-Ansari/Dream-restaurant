@@ -170,7 +170,7 @@ span.cart-pos {
 .intro-title {
   font-weight: 700;
   font-size: 10vw;
-  text-align: right;
+  text-align: center;
   margin: 20px 0px !important;
 }
 .intro-p {
@@ -204,8 +204,25 @@ span.cart-pos {
   padding: 15px 0px;
 }
 .how-it-works-section {
-  background: transparent
-    url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b4c076b5ee_BG%20Shape%20Content.svg")
-    no-repeat center center;
+  background: transparent url();
+}
+.special-section-padding {
+  padding: 20px 15px !important;
+}
+.below-full {
+  width: 100% !important;
+}
+.dots-bg {
+  background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3a0b276b5f7_Pattern%2001.svg");
+  background-repeat: no-repeat;
   background-size: cover;
+  background-position: left bottom;
+}
+.suport-text {
+  font-size: 10.04vw !important;
+  font-weight: bolder;
+  padding: 80px 30px !important;
+}
+.suport-text span {
+  color: #1b9097;
 }

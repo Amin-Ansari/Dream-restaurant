@@ -16,8 +16,13 @@
   .section-padding {
     padding: 70px 43px !important;
   }
+  .special-section-padding {
+    padding: 105px 40px !important;
+  }
+
   .intro-title {
     font-size: 3.1rem;
+    text-align: right;
   }
   .intro-link-padding {
     font-size: 1rem !important;
@@ -27,6 +32,9 @@
   }
   .fresh-product-style .half-width-content {
     padding: 70px 0px;
+  }
+  .suport-text {
+    font-size: 4.5rem !important;
   }
 }
 @media all and (min-width: 1200px) {
