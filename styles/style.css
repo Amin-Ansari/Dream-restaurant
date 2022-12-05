@@ -203,3 +203,9 @@ span.cart-pos {
 .fresh-product-style .half-width-content {
   padding: 15px 0px;
 }
+.how-it-works-section {
+  background: transparent
+    url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b4c076b5ee_BG%20Shape%20Content.svg")
+    no-repeat center center;
+  background-size: cover;
+}
