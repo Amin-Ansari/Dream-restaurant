@@ -152,8 +152,10 @@ span.cart-pos {
   font-size: 1.1rem;
   font-weight: 400 !important;
 }
+.section-padding {
+  padding: 104px 43px !important;
+}
 .intro-section {
-  padding: 104px 43px;
   background: transparent
     url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3306c76b60a_BG%20Shape.svg")
     no-repeat right top !important;
@@ -188,4 +190,16 @@ span.cart-pos {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
+}
+.fresh-product-style {
+  background: transparent
+    url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b4c076b5ee_BG%20Shape%20Content.svg")
+    no-repeat center center;
+  background-size: cover;
+}
+.intro-section > .half-width-content {
+  padding: 15px 0px;
+}
+.fresh-product-style > .half-width-content {
+  padding: 15px 0px;
 }

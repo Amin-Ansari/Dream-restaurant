@@ -19,6 +19,12 @@
   .intro-link-padding {
     font-size: 1rem !important;
   }
+  .intro-section > .half-width-content {
+    padding: 0px 0px;
+  }
+  .fresh-product-style > .half-width-content {
+    padding: 70px 0px;
+  }
 }
 @media all and (min-width: 1200px) {
 }
