@@ -13,16 +13,19 @@
   .title-off-canvas {
     font-size: 1.5rem !important;
   }
+  .section-padding {
+    padding: 70px 43px !important;
+  }
   .intro-title {
     font-size: 4rem;
   }
   .intro-link-padding {
     font-size: 1rem !important;
   }
-  .intro-section > .half-width-content {
+  .intro-section .half-width-content {
     padding: 0px 0px;
   }
-  .fresh-product-style > .half-width-content {
+  .fresh-product-style .half-width-content {
     padding: 70px 0px;
   }
 }
