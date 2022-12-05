@@ -221,8 +221,17 @@ span.cart-pos {
 .suport-text {
   font-size: 10.04vw !important;
   font-weight: bolder;
-  padding: 80px 30px !important;
 }
 .suport-text span {
   color: #1b9097;
+}
+.last-section-part {
+  min-height: 250px;
+  height: 85vw;
+  max-height: 550px;
+}
+.last-section-part:nth-of-type(2) {
+  background: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3710276b5d2_Group%20Photo.png")
+    no-repeat center center;
+  background-size: cover;
 }
