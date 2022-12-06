@@ -5,6 +5,10 @@
   .intro-title {
     font-size: 6.5vw;
   }
+  .sub-logo-footer {
+    padding: 20px 0px 20px 250px;
+    text-align: justify;
+  }
 }
 
 @media all and (min-width: 768px) {
@@ -35,6 +39,20 @@
   }
   .suport-text {
     font-size: 3.5rem !important;
+  }
+  .footer-content {
+    width: 50% !important;
+  }
+  .sub-logo-footer {
+    padding: 20px 0px 20px 200px;
+    text-align: justify;
+    font-size: 1.06rem;
+  }
+  .m-top-lg {
+    margin-top: 50px !important;
+  }
+  .padd-top {
+    padding-top: 84px;
   }
 }
 @media all and (min-width: 1200px) {

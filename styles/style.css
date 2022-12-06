@@ -3,6 +3,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: 0px;
+  list-style-type: none;
   text-decoration: none !important;
   font-family: "Noto Sans Arabic", sans-serif;
 }
@@ -238,4 +239,43 @@ span.cart-pos {
 .order-btn-submit {
   font-weight: 600 !important;
   padding: 12px 18px !important;
+}
+.footer-style {
+  background: transparent
+    url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa326ac76b5fe_Pattern%20Footer.svg")
+    no-repeat bottom left;
+  background-size: contain;
+  padding: 100px 11px 50px;
+}
+.footer-logo {
+  height: 18vw;
+  min-height: 40px;
+  max-height: 50px;
+}
+.footer-nav-title {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+}
+.nav-link-padd {
+  padding: 6px 0px !important;
+  font-size: 0.8rem;
+  font-weight: 500 !important;
+}
+.sub-logo-footer {
+  color: #9aa4b9 !important;
+  font-size: 4.5vw;
+  font-weight: 500;
+  padding: 20px 0px 20px 70px;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+.icon-style {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  line-height: 40px;
+  transition: all 0.3s;
+}
+.padd-top {
+  padding-top: 40px;
 }

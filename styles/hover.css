@@ -4,3 +4,7 @@ a.dark-text:hover {
 .intro-link-padding:hover {
   background-color: #31a7ad !important;
 }
+.icon-style:hover {
+  border: 1px solid #9a9c9e !important;
+  cursor: pointer;
+}
