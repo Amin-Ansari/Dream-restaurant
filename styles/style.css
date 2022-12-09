@@ -324,3 +324,8 @@ span.cart-pos {
     no-repeat right center !important;
   background-size: contain;
 }
+.full-menu-btn {
+  padding: 11px 28px !important;
+  font-weight: 500;
+  font-size: 1.18rem !important;
+}
