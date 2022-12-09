@@ -57,6 +57,10 @@
   .title-how {
     font-size: 1.4rem !important;
   }
+  .guide-title-margin {
+    margin-top: 40px !important;
+    margin-bottom: 50px !important;
+  }
 }
 @media all and (min-width: 1200px) {
 }

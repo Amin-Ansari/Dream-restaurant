@@ -285,6 +285,10 @@ span.cart-pos {
 }
 .sub-how-text {
   color: #647090 !important;
-  font-weight: 500 !important;
-  font-size: 0.9rem;
+  font-weight: 400 !important;
+  font-size: 0.97rem;
+}
+.guide-title-margin {
+  margin-top: 60px !important;
+  margin-bottom: 70px !important;
 }
