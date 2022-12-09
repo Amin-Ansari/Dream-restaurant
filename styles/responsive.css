@@ -66,6 +66,9 @@
     border-right: none;
     border-top: 2px dotted #d1cdcd;
   }
+  .sub-intro-text {
+    width: 40%;
+  }
 }
 @media all and (min-width: 1200px) {
 }

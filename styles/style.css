@@ -296,3 +296,25 @@ span.cart-pos {
   height: 85px;
   border-right: 2px dotted #d1cdcd;
 }
+.the-menu-bg {
+  padding: 70px 43px;
+}
+.the-menu-bg > div.container {
+  background: transparent
+    url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3b4c076b5ee_BG%20Shape%20Content.svg")
+    no-repeat center bottom;
+  background-size: cover;
+}
+.the-menu-bg h2 {
+  margin: 20px 0px !important;
+}
+.sub-intro-text {
+  font-size: 1.14rem;
+  color: #949db3 !important;
+  margin: 0px auto 20px !important;
+}
+.button-div button {
+  width: 100%;
+  padding: 12px 0px !important;
+  font-weight: 500;
+}
