@@ -292,3 +292,7 @@ span.cart-pos {
   margin-top: 60px !important;
   margin-bottom: 70px !important;
 }
+.dot-border {
+  height: 85px;
+  border-right: 2px dotted #d1cdcd;
+}

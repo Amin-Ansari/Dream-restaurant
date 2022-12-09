@@ -61,6 +61,11 @@
     margin-top: 40px !important;
     margin-bottom: 50px !important;
   }
+  .dot-border {
+    width: 85%;
+    border-right: none;
+    border-top: 2px dotted #d1cdcd;
+  }
 }
 @media all and (min-width: 1200px) {
 }
