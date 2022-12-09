@@ -315,6 +315,12 @@ span.cart-pos {
 }
 .button-div button {
   width: 100%;
-  padding: 12px 0px !important;
+  padding: 11px 0px !important;
   font-weight: 500;
+}
+.btn-theme-bg {
+  background: #35b8be
+    url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3345876b5c4_Button%20Wave.svg")
+    no-repeat right center !important;
+  background-size: contain;
 }
