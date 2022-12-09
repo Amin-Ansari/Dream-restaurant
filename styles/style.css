@@ -279,3 +279,12 @@ span.cart-pos {
 .padd-top {
   padding-top: 40px;
 }
+.title-how {
+  margin-top: 35px !important;
+  font-weight: 700 !important;
+}
+.sub-how-text {
+  color: #647090 !important;
+  font-weight: 500 !important;
+  font-size: 0.9rem;
+}

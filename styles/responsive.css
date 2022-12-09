@@ -54,6 +54,9 @@
   .padd-top {
     padding-top: 84px;
   }
+  .title-how {
+    font-size: 1.4rem !important;
+  }
 }
 @media all and (min-width: 1200px) {
 }
