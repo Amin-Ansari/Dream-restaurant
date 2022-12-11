@@ -329,3 +329,12 @@ span.cart-pos {
   font-weight: 500;
   font-size: 1.18rem !important;
 }
+.item-border {
+  border: 1px solid red;
+  padding: 10px 5px;
+  border-radius: 3px;
+}
+.menu-list {
+  width: 100%;
+  background-color: rebeccapurple !important;
+}
