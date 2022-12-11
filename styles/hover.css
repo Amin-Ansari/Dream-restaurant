@@ -8,3 +8,6 @@ a.dark-text:hover {
   border: 1px solid #9a9c9e !important;
   cursor: pointer;
 }
+.item-border:hover {
+  border-color: #31a7ad;
+}
