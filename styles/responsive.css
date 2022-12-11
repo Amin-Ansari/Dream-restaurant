@@ -15,6 +15,30 @@
   .button-container {
     width: 70% !important;
   }
+  .m-item-img {
+    width: 30%;
+    max-height: 130px !important;
+  }
+  .m-item-desc {
+    width: 70%;
+    padding: 10px;
+  }
+  .menu-img-rounded {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 135px !important;
+    object-fit: contain;
+  }
+  .item-desc-p {
+    padding: 20px 5px 20px 0px !important;
+  }
+  .first-pt-desc > h4,
+  .first-pt-desc > p {
+    width: 50%;
+  }
+  .first-pt-desc > p {
+    text-align: end;
+  }
 }
 @media all and (min-width: 992px) {
   .title-off-canvas {
@@ -26,7 +50,6 @@
   .special-section-padding {
     padding: 105px 40px !important;
   }
-
   .intro-title {
     font-size: 3.1rem;
     text-align: right;
@@ -71,6 +94,15 @@
   }
   .sub-intro-text {
     width: 40%;
+  }
+  .m-item-img {
+    width: 30%;
+  }
+  .m-item-desc {
+    width: 70%;
+  }
+  .item-desc-p {
+    padding: 20px 8px 20px 0px !important;
   }
 }
 @media all and (min-width: 1200px) {
