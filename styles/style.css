@@ -382,6 +382,7 @@ input[type="number"] {
 .title-menu {
   overflow-x: scroll;
   scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 .title-menu::-webkit-scrollbar {
   display: none;
