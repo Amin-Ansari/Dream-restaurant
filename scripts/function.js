@@ -3,6 +3,8 @@ import { hiddenMenu } from "./elements";
 import { cartButton } from "./elements";
 import { offCavas } from "./elements";
 import { outViewContainer } from "./elements";
+import { menuButtons } from "./elements";
+import { menuList } from "./elements";
 
 function styleChange() {
   toggleButton.classList.toggle("theme-bg");
@@ -27,4 +29,28 @@ export function ifClickCanvas(e) {
 }
 export function closeCanvas() {
   offCavas.classList.add("d-none");
+}
+export function unsetAll() {
+  menuButtons.forEach(function (item) {
+    item.classList.remove("btn-theme-bg");
+    item.classList.remove("text-white");
+    if (!item.classList.contains("border")) {
+      item.classList.add("border");
+    }
+  });
+}
+export function selectTheButton() {
+  unsetAll();
+  this.classList.add("btn-theme-bg");
+  this.classList.add("text-white");
+  this.classList.remove("border");
+  for (let list of menuList) {
+    if (`${this.id}-menu` == list.id) {
+      list.classList.remove("d-none");
+    } else {
+      if (!list.classList.contains("d-none")) {
+        list.classList.add("d-none");
+      }
+    }
+  }
 }

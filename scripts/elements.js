@@ -6,3 +6,5 @@ export const outViewContainer = document.querySelector(
 export const cartButton = document.querySelector("#order-cart-button");
 export const offCavas = document.querySelector(".off-canvas-container");
 export const offCanvasCloseBtn = document.querySelector(".close-style");
+export const menuList = document.querySelectorAll(".menu-list");
+export const menuButtons = document.querySelectorAll(".menu-btn");

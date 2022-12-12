@@ -294,7 +294,8 @@
           >
             <button
               type="button"
-              class="btn text-center btn-theme-bg text-white"
+              id="food"
+              class="btn menu-btn text-center btn-theme-bg text-white"
             >
               غذای اصلی
             </button>
@@ -302,20 +303,28 @@
           <div
             class="d-flex button-div align-items-center justify-content-center col-sm-5 col-md-3 p-0 pt-2 pb-2 p-sm-2"
           >
-            <button type="button" class="btn text-center border">
+            <button
+              type="button-btn"
+              id="salad"
+              class="btn menu-btn text-center border"
+            >
               پیش غذا
             </button>
           </div>
           <div
             class="d-flex button-div align-items-center justify-content-center col-sm-5 col-md-3 p-0 pt-2 pb-2 p-sm-2"
           >
-            <button type="button" class="btn text-center border full-menu-btn">
+            <button
+              type="button"
+              id="drink"
+              class="btn menu-btn text-center border full-menu-btn"
+            >
               نوشیدنی
             </button>
           </div>
         </div>
         <div class="menu-container">
-          <ul class="menu-list switch-menu p-0 row m-0 mt-sm-4">
+          <ul id="food-menu" class="menu-list switch-menu p-0 row m-0 mt-sm-4">
             <li
               class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
             >
@@ -635,7 +644,10 @@
               </div>
             </li>
           </ul>
-          <ul class="menu-list d-none switch-menu p-0 row m-0 mt-sm-4">
+          <ul
+            id="salad-menu"
+            class="menu-list d-none switch-menu p-0 row m-0 mt-sm-4"
+          >
             <li
               class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
             >
@@ -849,7 +861,10 @@
               </div>
             </li>
           </ul>
-          <ul class="menu-list d-none switch-menu p-0 row m-0 mt-sm-4">
+          <ul
+            id="drink-menu"
+            class="menu-list d-none switch-menu p-0 row m-0 mt-sm-4"
+          >
             <li
               class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
             >

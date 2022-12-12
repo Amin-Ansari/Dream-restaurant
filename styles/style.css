@@ -337,7 +337,6 @@ span.cart-pos {
 }
 .menu-list {
   width: 100%;
-  animation: switch-animation 0.4s ease 0s 1 normal forwards;
 }
 .m-item-img,
 .m-item-desc {
