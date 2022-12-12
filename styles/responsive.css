@@ -32,7 +32,7 @@
   .item-desc-p {
     padding: 20px 5px 20px 0px !important;
   }
-  .first-pt-desc > h4,
+  .first-pt-desc .title-menu,
   .first-pt-desc > p {
     width: 50%;
   }

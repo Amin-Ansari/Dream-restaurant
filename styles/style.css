@@ -372,7 +372,17 @@ input[type="number"] {
   border: 1px solid gray;
   margin-left: 8px;
 }
-.first-pt-desc > h4,
+.first-pt-desc .title-menu,
 .first-pt-desc > p {
   width: 100%;
+}
+.title-menu h4 {
+  white-space: nowrap;
+}
+.title-menu {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+.title-menu::-webkit-scrollbar {
+  display: none;
 }
