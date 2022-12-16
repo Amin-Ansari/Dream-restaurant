@@ -7,6 +7,9 @@
   text-decoration: none !important;
   font-family: "Noto Sans Arabic", sans-serif;
 }
+body {
+  overflow-x: hidden !important;
+}
 .header-back-img {
   background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa36d5976b5d3_Banner%20Wave.svg");
   background-repeat: none;
