@@ -8,7 +8,10 @@ import { closeCanvas } from "./function";
 import { menuButtons } from "./elements";
 import { selectTheButton } from "./function";
 import { scrollTheTitle } from "./function";
-// import { obs } from "./class";
+import { guideElements } from "./elements";
+import { intersectedElements } from "./elements";
+import { obs } from "./class";
+import { guideObserver } from "./class";
 
 toggleButton.addEventListener("click", toggleSub);
 cartButton.addEventListener("click", toggleCart);
@@ -19,24 +22,6 @@ menuButtons.forEach((item) => item.addEventListener("click", selectTheButton));
 
 scrollTheTitle();
 
-let obs = new IntersectionObserver(function (entry) {
-  for (let element of entry) {
-    if (element.isIntersecting) {
-      element.target.classList.replace("img-anim-up", "scale-up-img");
-      element.target.classList.replace("h-anim-right", "move-to-right-title");
-      element.target.classList.replace("p-anim-right", "move-to-right-text");
-      element.target.classList.replace(
-        "button-anim-right",
-        "move-to-right-btn"
-      );
-
-      element.target.classList.replace("h-anim-left", "move-to-left-title");
-      element.target.classList.replace("p-anim-left", "move-to-left-text");
-      element.target.classList.replace("button-anim-left", "move-to-left-btn");
-    }
-  }
-});
-
-let intersectedElements = document.querySelectorAll(".observer");
+guideElements.forEach((item) => guideObserver.observe(item));
 
 intersectedElements.forEach((item) => obs.observe(item));
