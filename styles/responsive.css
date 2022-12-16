@@ -107,8 +107,8 @@
     font-size: 1.4rem !important;
   }
   .guide-title-margin {
-    margin-top: 70px !important;
-    margin-bottom: 70px !important;
+    margin-top: 60px !important;
+    margin-bottom: 45px !important;
   }
   .intro-title,
   .intro-title + p {
@@ -116,6 +116,13 @@
   }
   .how-to-sectin-title {
     padding-left: 0px !important;
+  }
+  .menu-tilte {
+    font-size: 3rem !important;
+    padding-left: 0px !important;
+  }
+  .the-menu-bg h2 {
+    margin: 70px 0px 20px !important;
   }
   .dot-border {
     width: 85%;
@@ -133,6 +140,9 @@
   }
   .item-desc-p {
     padding: 20px 8px 20px 0px !important;
+  }
+  .except-margin {
+    margin-top: 0px !important;
   }
 }
 @media all and (min-width: 1200px) {
