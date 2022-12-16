@@ -50,6 +50,14 @@
     text-align: center;
     margin: 60px 0px 27px !important;
   }
+  .other-section-title {
+    font-weight: 700;
+    font-size: 12vw;
+  }
+  .how-to-sectin-title {
+    font-weight: 700;
+    font-size: 9vw;
+  }
   .intro-p {
     text-align: justify;
   }
@@ -99,8 +107,15 @@
     font-size: 1.4rem !important;
   }
   .guide-title-margin {
-    margin-top: 40px !important;
-    margin-bottom: 50px !important;
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+  }
+  .intro-title,
+  .intro-title + p {
+    padding-left: 57px !important;
+  }
+  .how-to-sectin-title {
+    padding-left: 0px !important;
   }
   .dot-border {
     width: 85%;

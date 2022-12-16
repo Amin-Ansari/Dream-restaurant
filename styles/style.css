@@ -139,6 +139,10 @@ span.cart-pos {
 .off-canvas-content {
   height: 100%;
 }
+.intro-title,
+.intro-title + p {
+  padding-left: 0px !important;
+}
 .btn-start-style {
   background: #36b7bd !important;
   padding-top: 10px !important;
@@ -181,6 +185,12 @@ span.cart-pos {
   text-align: center;
   line-height: 1.5rem;
 }
+.other-section-title {
+  font-weight: 700;
+}
+.how-to-sectin-title {
+  font-weight: 800;
+}
 .intro-links {
   display: flex;
   justify-content: center;
@@ -195,6 +205,9 @@ span.cart-pos {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right center;
+}
+.about-us-link-padding {
+  padding: 15px 28px !important;
 }
 .fresh-product-style {
   background: transparent
@@ -293,8 +306,8 @@ span.cart-pos {
   font-size: 0.97rem;
 }
 .guide-title-margin {
-  margin-top: 60px !important;
-  margin-bottom: 70px !important;
+  margin-top: 70px !important;
+  margin-bottom: 50px !important;
 }
 .dot-border {
   height: 85px;
