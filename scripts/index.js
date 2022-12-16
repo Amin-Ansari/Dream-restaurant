@@ -29,6 +29,10 @@ let obs = new IntersectionObserver(function (entry) {
         "button-anim-right",
         "move-to-right-btn"
       );
+
+      element.target.classList.replace("h-anim-left", "move-to-left-title");
+      element.target.classList.replace("p-anim-left", "move-to-left-text");
+      element.target.classList.replace("button-anim-left", "move-to-left-btn");
     }
   }
 });
