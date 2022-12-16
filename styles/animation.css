@@ -8,6 +8,9 @@
 .switch-menu {
   animation: clearOpa 0.8s ease 0s 1 normal forwards;
 }
+.scroll-animation {
+  animation: scrollAnimation 5.3s linear 0s infinite normal forwards;
+}
 
 @keyframes clearOpa {
   0% {
@@ -25,5 +28,17 @@
   100% {
     transform: translateX(0px);
     opacity: 1;
+  }
+}
+@keyframes scrollAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  0.5% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(500px);
   }
 }

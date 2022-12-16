@@ -7,7 +7,7 @@ import { ifClickCanvas } from "./function";
 import { closeCanvas } from "./function";
 import { menuButtons } from "./elements";
 import { selectTheButton } from "./function";
-import { itemTitle } from "./elements";
+import { scrollTheTitle } from "./function";
 
 toggleButton.addEventListener("click", toggleSub);
 cartButton.addEventListener("click", toggleCart);
@@ -16,6 +16,4 @@ offCanvasCloseBtn.addEventListener("click", closeCanvas);
 
 menuButtons.forEach((item) => item.addEventListener("click", selectTheButton));
 
-for (let element of itemTitle) {
-  element.scrollLeft = 800;
-}
+scrollTheTitle();

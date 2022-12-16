@@ -380,10 +380,6 @@ input[type="number"] {
   white-space: nowrap;
 }
 .title-menu {
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-.title-menu::-webkit-scrollbar {
-  display: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
