@@ -42,3 +42,138 @@
     transform: translateX(500px);
   }
 }
+
+@keyframes showUpImg {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes toRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes toRightText {
+  0% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes toRightButton {
+  0% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes toLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes toLeftText {
+  0% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes toLeftButton {
+  0% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  40% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.scale-up-img {
+  animation: showUpImg 0.5s linear 0s 1 normal forwards;
+}
+.move-to-right-title {
+  animation: toRight 0.5s linear 0s 1 normal forwards;
+}
+.move-to-right-text {
+  animation: toRightText 0.7s linear 0s 1 normal forwards;
+}
+.move-to-right-btn {
+  animation: toRightButton 1s linear 0s 1 normal forwards;
+}
+
+.move-to-left-title {
+  animation: toLeft 0.5s linear 0s 1 normal forwards;
+}
+.move-to-left-text {
+  animation: toLeftText 0.7s linear 0s 1 normal forwards;
+}
+.move-to-left-btn {
+  animation: toLeftButton 1s linear 0s 1 normal forwards;
+}
