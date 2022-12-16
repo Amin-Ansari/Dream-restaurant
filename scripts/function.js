@@ -57,11 +57,13 @@ export function selectTheButton() {
 
 export function scrollTheTitle() {
   let itemTitle = document.querySelectorAll(".title-menu");
-  for (let element of itemTitle) {
-    if (element.firstElementChild.innerHTML.length >= 18) {
-      element.firstElementChild.classList.add("scroll-animation");
-    } else {
-      element.firstElementChild.classList.remove("scroll-animation");
+  if (window.innerWidth >= 576) {
+    for (let element of itemTitle) {
+      if (element.firstElementChild.innerHTML.length >= 18) {
+        element.firstElementChild.classList.add("scroll-animation");
+      } else {
+        element.firstElementChild.classList.remove("scroll-animation");
+      }
     }
   }
 }
