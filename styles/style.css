@@ -259,7 +259,7 @@ span.cart-pos {
   padding: 12px 18px !important;
 }
 .footer-style {
-  background: transparent
+  background: #f5fbfc
     url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa326ac76b5fe_Pattern%20Footer.svg")
     no-repeat bottom left;
   background-size: contain;
@@ -420,4 +420,7 @@ input[type="number"] {
 }
 .sub-menu-index {
   z-index: 1 !important;
+}
+.no-bg {
+  background: none !important;
 }
