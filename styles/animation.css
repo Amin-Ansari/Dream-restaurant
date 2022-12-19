@@ -184,6 +184,21 @@
   }
 }
 
+@keyframes introUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  20% {
+    opacity: 0;
+    transform: translateY(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 .scale-up-img {
   animation: showUpImg 0.5s linear 0s 1 normal forwards;
 }
@@ -221,4 +236,8 @@
 }
 .how-to-item-5 {
   animation: mobileAnimation 0.8s linear 0.8s 1 normal forwards;
+}
+
+.intro-show {
+  animation: introUp 0.8s linear 0s 1 normal forwards;
 }

@@ -10,8 +10,10 @@ import { selectTheButton } from "./function";
 import { scrollTheTitle } from "./function";
 import { guideElements } from "./elements";
 import { intersectedElements } from "./elements";
+import { introSectionElements } from "./elements";
 import { obs } from "./class";
 import { guideObserver } from "./class";
+import { simpleObserver } from "./class";
 
 toggleButton.addEventListener("click", toggleSub);
 cartButton.addEventListener("click", toggleCart);
@@ -25,3 +27,5 @@ scrollTheTitle();
 guideElements.forEach((item) => guideObserver.observe(item));
 
 intersectedElements.forEach((item) => obs.observe(item));
+
+introSectionElements.forEach((item) => simpleObserver.observe(item));

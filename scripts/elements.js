@@ -13,3 +13,4 @@ export const guideElements = document.querySelectorAll(
   ".content-item,.dot-item"
 );
 export const intersectedElements = document.querySelectorAll(".observer");
+export const introSectionElements = document.querySelectorAll(".intro-observe");

@@ -22,3 +22,13 @@ export const guideObserver = new IntersectionObserver(function (entries) {
     }
   }
 });
+
+export const simpleObserver = new IntersectionObserver(function (entries) {
+  for (let element of entries) {
+    if (element.isIntersecting) {
+      if (!element.target.classList.contains(`intro-show`)) {
+        element.target.classList.add(`intro-show`);
+      }
+    }
+  }
+});
