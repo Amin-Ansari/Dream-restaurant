@@ -498,3 +498,20 @@ button.theme-bg {
   text-align: justify;
   padding: 16px 0px 16px 25px;
 }
+.numbers-section {
+  background: rgba(26, 25, 25, 0.411)
+    url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3828776b614_Group%20Photo.jpg")
+    no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 10px;
+  background-blend-mode: color;
+}
+.number-size-title {
+  font-weight: 700 !important;
+  font-size: calc(3rem + 2vw);
+}
+.number-name {
+  font-weight: 500 !important;
+  font-size: 1.2rem;
+}
