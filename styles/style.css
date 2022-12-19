@@ -417,3 +417,6 @@ input[type="number"] {
 .dot-item {
   opacity: 0;
 }
+.observer {
+  opacity: 0;
+}
