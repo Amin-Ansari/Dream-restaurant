@@ -48,6 +48,15 @@
   .accordion-menues {
     padding: 0px 100px !important;
   }
+  .half-size-parts {
+    width: 50%;
+  }
+  .home-of-fresh {
+    padding: 60px 0px !important;
+  }
+  .image-about {
+    max-width: 90%;
+  }
 }
 @media all and (min-width: 992px) {
   .intro-title {
@@ -166,6 +175,10 @@
   }
   .lorem-p {
     padding: 30px 0px !important;
+  }
+
+  .image-about {
+    max-width: 80%;
   }
 }
 @media all and (min-width: 1200px) {

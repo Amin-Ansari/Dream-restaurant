@@ -469,3 +469,32 @@ input[type="number"] {
   opacity: 1;
   transform: rotate(20deg);
 }
+button.theme-bg {
+  background-image: url("https://assets.website-files.com/5e865e09d8efa3310676b585/5e865e09d8efa3345876b5c4_Button%20Wave.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 11px 18px;
+  font-size: 1.1rem;
+  font-weight: 500 !important;
+}
+.home-of-fresh {
+  padding: 40px 11px !important;
+}
+.image-about {
+  max-width: 100%;
+  height: auto;
+}
+.half-size-parts {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.fresh-title {
+  font-weight: 700 !important;
+  font-size: calc(1.8rem + 0.2vw) !important;
+}
+.text-gray-color {
+  color: #6c7896;
+  font-size: 1.04rem;
+  text-align: justify;
+  padding: 16px 0px 16px 25px;
+}
