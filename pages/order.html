@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dream restaurant</title>
-    <link rel="shortcut icon" href="../images/Logo.svg" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/hover.css" />
-    <link rel="stylesheet" href="../styles/animation.css" />
-    <link rel="stylesheet" href="../styles/responsive.css" />
+    <link rel="shortcut icon" href="images/Logo.svg" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/hover.css" />
+    <link rel="stylesheet" href="styles/animation.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -25,10 +25,1330 @@
     />
   </head>
   <body>
+    <div
+      class="container-fluid theme-bg text-center d-none d-sm-block header-back-img"
+    >
+      ما آماده پذیرش و ارسال سفارش های شما میباشیم.
+      <a href="order.html" class="text-white">سفارش دهید</a>
+    </div>
+    <nav class="container-fluid p-1 pt-2 pb-2 position-relative">
+      <div class="container d-flex justify-content-between">
+        <div class="navbar navbar-expand-sm p-0">
+          <a href="index.html" class="navbar-brand d-inline-block">
+            <img
+              src="images/Logo.svg"
+              alt="Logo of website"
+              class="logo-style"
+            />
+          </a>
+          <ul class="navbar-nav nav d-none d-lg-flex m-3 mt-0 mb-0">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link selected-link">صفحه اصلی</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link dark-text">سفارشات</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link dark-text">سوالات متداول</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link dark-text">درباره ما</a>
+            </li>
+            <li class="nav-item">
+              <a href="index.html" class="nav-link dark-text">تماس با ما</a>
+            </li>
+          </ul>
+        </div>
+        <div class="d-flex">
+          <button
+            class="btn theme-bg text-white button-padd patern-theme ms-2 position-relative"
+            id="order-cart-button"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span
+              class="badge bg-white rounded-pill theme-color cart-pos position-absolute"
+              >0</span
+            >
+          </button>
+          <button
+            class="btn gray-btn button-padd d-inline-block d-lg-none overflow-hidden toggle-button"
+          >
+            <span class="bars d-block"></span>
+            <span class="bars d-block middle-bar"></span>
+            <span class="bars d-block"></span>
+          </button>
+        </div>
+      </div>
+      <div
+        class="container-fluid p-0 overflow-hidden position-absolute container-pos d-flex d-lg-none out-of-view-container sub-menu-index"
+      >
+        <ul
+          class="container-fluid navbar-nav nav pt-2 out-of-view sub-box-shadow bg-white"
+        >
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link p-side d-inline-block mt-2 mb-2 selected-link"
+              >صفحه اصلی</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link p-side d-inline-block mt-2 mb-2 dark-text"
+              >سفارشات</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link p-side d-inline-block mt-2 mb-2 dark-text"
+              >سوالات متداول</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link p-side d-inline-block mt-2 mb-2 dark-text"
+              >درباره ما</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              href="index.html"
+              class="nav-link p-side d-inline-block mt-2 mb-4 dark-text"
+              >تماس با ما</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div
+      class="container-fluid position-fixed off-canvas-container m-0 p-0 off-canvas-appear d-none"
+    >
+      <div class="off-canvas bg-white off-canvas-content-appear">
+        <div
+          class="off-canvas-header d-flex justify-content-between align-items-center border-bottom-1 border"
+        >
+          <h2 class="title-off-canvas m-0">سبد خرید شما</h2>
+          <button type="button" class="btn close-style">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div
+          class="off-canvas-content d-flex flex-column justify-content-center align-items-center"
+        >
+          <p class="empty-p mb-4">سبد خرید شما خالی میباشد</p>
+          <button class="btn btn-start-style text-white mb-1">
+            سفارش اضافه کنید
+          </button>
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFYAAAA1CAYAAADbNhwDAAAFjElEQVR4Xu2aTXLbNhSAAUptmp17gioniD1jd7qUknZqJ4tGN5BO0OgEiU5g5wRxTmB70didNpG668SeKXOCsCcod5k0FtH3wB+BIEiAIiFXCTjjhYfAA/Dh/VOUuMcKAWpFqhNKHFhLSuDAOrCWCFgS6zTWgbVEwJJYp7EOrCUClsQ6jV0X2L2L2SEjpEcXZHr5cOBbWveTF5vT2L1fZtukw/5anpoeXe4PJp88BQsHzIHdffnqMfXoYXEdB7gu+7zGXryegYB+uRAH2BRwBrboBkpF+GRBx87/ViPOwO7+OntCGXuaDmeEnnrR4gXzOj8RwkayGBpFwzcPvj81vcHPbdxSYy9ev4PD9zKwbDG4Ovhhjv/H2kx+lgCHHUZ3/jwYBJ8bNJPzcrCyG0BtvdofDGUBRcD0GLKGsclCpmO2T2Zb3a+ut3F8l3SDTb04DlZ2AzozFwD3LvfvDUyhVY1DoF/cJk/AKh6JlhPP2bygGWts3g34AGunDVimMhKLOSkCXUoosyLTNdYxbvf8tz6lnUNQzCmNNYX9k/nWiE2uHtw/Sv+Pc1vvG1uFQrI++vct3eF1lqSbb/M9VqxgbY9hjRD2Oaayf4WAdEf0a6DNCH3LlsbIbqjq8Lb20AR44sIQ6iiFitlSqrFYxvbgr+AGcm5iQXfazF812gp9Coq9ijDZNNdo+eKbQGk6twwqjwrcxybpFIuit6IbiP3v7PkyzWo3C0h8ElZ74hOyiE2vP3jH/nAAUPPBFd7lXFVTOKvO59nLbfKcxsGWyPvStg33zl+NCKUAlz8hBLavV92MPE/Vm1D5UcF/kf+DO5ChqrIWLVg5uBHGxpcH94/bgCsC47delj8LVnPTYIsZDD3++J5MUutKuWjBclO8mJ2kKt+m1prmz9L687Zy57rKkbguTAvTDMb/+J4OZKgo1wjsd+ez3oIyTIn4wyh9evXjYFp3YwVXIPUnVIFJEeBuBGzitqCAyaBWlvRGYBFIPoiRVvoEsptRgS2mY+utwoSKEHPU9AkZWwzTXopKwYzBJhDStAxlBdA+HDZNv9I8OTaFvP9WrFkY09RqquYXgxQfzQsAXWfPGCxKlF1CzGLZBVvlkFIAy/JoKUfMRK8rj02CFH5N6YuaagIVx9cCixNUuWeT3FJ2B5hu/fuhM4eGTFrNiPfVarqnUgTB9EfwXiyzjTQ1lVkbLE789uXvj5jnYXQUHx/U99kqqZjkv1EmVly8dSg+TS7QxJqSc6GW9qTxc7CUcZ0W5kpgcVE5B81vhB4xdn1W5dzF8YVcWU0hgNRmR5XamECrGpNYIUb8fnEcPYI8dVp33ZXB4gYMGygBJPU+OB0fzPxvxvJdLOycgafGAxU0NKetDX25CmyF2eNwXlrLJb7pJTYCy+HGPUi53jddH3oB9BR+ILIFG0mbLaq5ARQFd0yF6sbxaH8rGsGnfvjcVDB7DtU0SJWt1RgsCi6L4LoDJu+x0aLtxcIYHwqT025EXtTxdeIeYiXoph9Hy9b0IdOZmLoxq2BT4SUpiiHfWsPm2FKk0eIPxjqBKpfml/0l6TEa9Q3dTaGrVmtH0uBWNFbegGBqoB1VPwBRbj3g7oGCOQqf4w0OCfOyR9RGH3x8KPQ6VKLmUOxMmhY7omArYOWd88KCRH1CvbsQqDBI9RLzRzcQwsEDHtyuyZl4uLgg4R8YRwZgsyHYAcN/ACauk66lEhFCijhZJUXU7WctYHWb0L0v+V2DblrV+1bNXrXQRoAVN550mVZxMShmDinUmfh1osntVM3dOLDiYbBSijqdu9Ah3wazRxcjR/r4uxmL3pLI89v0oboL2WiwusPd5HsH1hJ9B9aBtUTAklinsQ6sJQKWxDqNdWAtEbAk1mmsA2uJgCWx/wEWfdtE72B26wAAAABJRU5ErkJggg=="
+            alt="Attention arrow"
+            class="d-block mb-5"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="intro-section section-padding container-fluid d-flex justify-content-center"
+    >
+      <div class="container row flex-column-reverse flex-lg-row">
+        <div class="half-width-content col-lg-6 pt-0 pb-0 pt-lg-1 pb-lg-1">
+          <img
+            src="images/Hero Image.png"
+            alt="Intro image"
+            class="img-fluid observer img-anim-up"
+          />
+        </div>
+        <div class="half-width-content col-lg-6">
+          <h2 class="intro-title observer h-anim-right">
+            لذیذ ترین غذا ها به صورت
+            <span class="theme-color">بیرون بر</span> با دلیوری فوری
+          </h2>
+          <p class="intro-p pt-2 pb-2 observer p-anim-right">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            ست، چاپگرها و متون بلکه
+          </p>
+          <div class="intro-links mt-4 mb-4 mt-lg-4 mb-lg-0">
+            <a
+              href="javascript:void(0)"
+              class="btn theme-bg text-white intro-link-padding observer button-anim-right"
+              >سفارش ثبت کنید</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="fresh-product-section section-padding container-fluid d-flex justify-content-center"
+    >
+      <div
+        class="container row flex-column-reverse flex-lg-row fresh-product-style"
+      >
+        <div class="half-width-content col-lg-6 pt-0 pb-0 pt-lg-5 pb-lg-5">
+          <img
+            src="images/eating burger.png"
+            alt="Intro image"
+            class="img-fluid observer img-anim-up"
+          />
+        </div>
+
+        <div class="half-width-content col-lg-6">
+          <h2
+            class="intro-title other-section-title theme-color observer h-anim-right"
+          >
+            خواست گاه تازه ترین غذاها و نوشیدنی ها
+          </h2>
+          <p class="intro-p pt-2 pb-2 observer p-anim-right">
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در
+            ست، چاپگرها و متون بلکه
+          </p>
+          <div class="intro-links mt-2 mt-lg-5">
+            <a
+              href="javascript:void(0)"
+              class="btn theme-bg text-white intro-link-padding about-us-link-padding mt-3 mb-3 mt-lg-0 mb-lg-0 observer button-anim-right"
+              >درباره ما بدانید</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contianer-fluid d-flex justify-content-center">
+      <div class="container">
+        <h2
+          class="intro-title how-to-sectin-title text-center theme-color guide-title-margin"
+        >
+          نحوه سفارش
+        </h2>
+        <div class="row justify-content-center">
+          <div class="content-item col-lg-3 text-center">
+            <img
+              src="images/How it works (Burger).png"
+              alt="Proccess image"
+              class="img-fluid"
+            />
+            <div class="p-3 pt-0 pb-0 p-lg-0">
+              <h4 class="title-how h2">غدا در منو پیدا کنید</h4>
+              <p class="sub-how-text">
+                منوی خود را با استفاده از CMS جریان وب به راحتی تطبیق دهید و به
+                مشتریان اجازه دهید موارد شما را مرور کنند.
+              </p>
+            </div>
+          </div>
+          <div
+            class="dot-item col-lg-1 d-flex justify-content-center align-items-center"
+          >
+            <span class="d-block dot-border mt-3 mb-3 mt-lg-0 mb-lg-5"></span>
+          </div>
+          <div class="content-item col-lg-3 text-center">
+            <img
+              src="images/How it works(small mibile).png"
+              alt="Proccess image"
+              class="img-fluid"
+            />
+            <div class="p-3 pt-0 pb-0 p-lg-0">
+              <h4 class="title-how h2">سفارشتان را ثبت کنید</h4>
+              <p class="sub-how-text">
+                به مشتریان خود اجازه دهید از طریق سیستم قدرتمند تجارت الکترونیک
+                سفارش و پرداخت کنند، یا به سادگی اجازه دهید با فروشگاه شما تماس
+                بگیرند.
+              </p>
+            </div>
+          </div>
+          <div
+            class="dot-item col-lg-1 d-flex justify-content-center align-items-center"
+          >
+            <span class="d-block dot-border mt-3 mb-3 mt-lg-0 mb-lg-5"></span>
+          </div>
+          <div class="content-item col-lg-3 text-center">
+            <img
+              src="images/How it works (house).png"
+              alt="Proccess image"
+              class="img-fluid"
+            />
+            <div class="p-3 pt-0 pb-0 p-lg-0">
+              <h4 class="title-how h2">سفارشتان را تحویل بگیرید</h4>
+              <p class="sub-how-text">
+                تدارکات خود را مدیریت کنید و سفارشات را به سادگی از طریق سیستم
+                تجارت الکترونیک دریافت کنید.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid the-menu-bg">
+      <div class="container mx-auto">
+        <div class="menu-heading">
+          <h2
+            class="intro-title other-section-title menu-tilte text-center theme-color menu-title-margin"
+          >
+            منو مارا مرور نمایید
+          </h2>
+          <p class="sub-intro-text text-center">
+            از منوی ما برای سفارش آنلاین استفاده کنید یا با فروشگاه ما
+            <a href="tel:09123456788" class="theme-color">تماس</a>
+            گرفته و غذای خود را به راحتی تحویل بگیرید.
+          </p>
+        </div>
+        <div class="button-container mx-auto row justify-content-center">
+          <div
+            class="d-flex button-div align-items-center justify-content-center col-sm-5 col-md-3 p-0 pt-2 pb-2 p-sm-2"
+          >
+            <button
+              type="button"
+              id="food"
+              class="btn menu-btn text-center btn-theme-bg text-white"
+            >
+              غذای اصلی
+            </button>
+          </div>
+          <div
+            class="d-flex button-div align-items-center justify-content-center col-sm-5 col-md-3 p-0 pt-2 pb-2 p-sm-2"
+          >
+            <button
+              type="button-btn"
+              id="salad"
+              class="btn menu-btn text-center border"
+            >
+              پیش غذا
+            </button>
+          </div>
+          <div
+            class="d-flex button-div align-items-center justify-content-center col-sm-5 col-md-3 p-0 pt-2 pb-2 p-sm-2"
+          >
+            <button
+              type="button"
+              id="drink"
+              class="btn menu-btn text-center border full-menu-btn"
+            >
+              نوشیدنی
+            </button>
+          </div>
+        </div>
+        <div class="menu-container">
+          <ul id="food-menu" class="menu-list switch-menu p-0 row m-0 mt-sm-4">
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/menu-item-burger-1.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">برگر دودی</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-3 mt-md-0">40000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/menu-item-burger-2.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">برگر سوخاری</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">55000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/menu-item-burger-3.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">برگر کالی</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">45000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/menu-item-burger-4.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">برگر خردلی</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">45000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/menu-item-burger-5.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">برگر اسپایسی</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">45000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/menu-item-burger-6.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">برگر کلاسیک</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">48000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul
+            id="salad-menu"
+            class="menu-list d-none switch-menu p-0 row m-0 mt-sm-4"
+          >
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/salad-2.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">بوبیا با قارچ</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-3 mt-md-0">27000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/salad-1.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">سالاد سزار</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">30000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/salad-3.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">سیسب زمینی با دیپ چدار</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">28000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/salad-4.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">فرنچ فرایز</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">45000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <ul
+            id="drink-menu"
+            class="menu-list d-none switch-menu p-0 row m-0 mt-sm-4"
+          >
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/drink-1.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">آیس تی</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-3 mt-md-0">10000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/drink-2.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">شربت انجیر و لیمو</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">15000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/drink-3.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">کوکاکولا</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">8000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li
+              class="menu-item col-sm-6 col-md-12 col-lg-6 p-0 p-sm-2 p-md-3 pt-2 pb-2"
+            >
+              <div
+                class="item-content item-border p-3 bg-white d-flex flex-wrap"
+              >
+                <div class="m-item-img align-self-center">
+                  <a href="javascript:void(0)" class="d-inline-block">
+                    <img
+                      src="images/drink-4.png"
+                      alt="menu item"
+                      class="menu-img-rounded"
+                    />
+                  </a>
+                </div>
+                <div class="m-item-desc item-desc-p">
+                  <div
+                    class="first-pt-desc d-flex flex-wrap justify-content-start justify-content-md-between"
+                  >
+                    <div class="title-menu">
+                      <h4 class="m-0 pt-1 pb-1">لیمو ناد</h4>
+                    </div>
+                    <p class="theme-color m-0 mt-2 mt-md-0">15000 تومان</p>
+                  </div>
+                  <div class="extra-desc">
+                    <p class="text-gray-original pt-3">
+                      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ،
+                      و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه
+                      روزنامه
+                    </p>
+                  </div>
+                  <div class="item-form-container">
+                    <form
+                      action="javascript:void(0)"
+                      method="post"
+                      class="d-flex flex-wrap"
+                    >
+                      <input
+                        type="number"
+                        name="item-number"
+                        value="1"
+                        min="1"
+                        max="99"
+                      />
+                      <input
+                        type="submit"
+                        type="button"
+                        value="اضافه کردن سفارش"
+                        class="btn theme-bg text-white pt-2 pb-2"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <button
+          class="btn btn-theme-bg text-white d-block mx-auto full-menu-btn mt-3 mb-3"
+        >
+          دیدن تمام منو
+        </button>
+      </div>
+    </div>
+
+    <div
+      class="fresh-product-section section-padding container-fluid d-flex justify-content-center"
+    >
+      <div
+        class="container row flex-column-reverse flex-lg-row fresh-product-style"
+      >
+        <div class="half-width-content col-lg-6 special-section-padding">
+          <h2
+            class="intro-title other-section-title theme-color observer h-anim-left"
+          >
+            امکان سفارش انلاین با اپلیکیشن رستوران
+          </h2>
+          <p class="intro-p pt-2 pb-2 observer p-anim-left">
+            لورم ایپسوم متن ساختگی با تولید نامفهوم از صنعت چاپ، و با استفاده از
+            طراحان گرافیک چاپگرها و بلکه روزنامه و مجله
+          </p>
+          <div class="intro-links mt-2 mt-lg-5">
+            <a
+              href="javascript:void(0)"
+              class="btn theme-bg text-white intro-link-padding about-us-link-padding observer button-anim-left"
+              >دانلود برنامه</a
+            >
+          </div>
+        </div>
+        <div class="half-width-content col-lg-6">
+          <img
+            src="images/out_App.png"
+            alt="Intro image"
+            class="img-fluid observer img-anim-up"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="fresh-product-section section-padding container-fluid d-flex justify-content-center"
+    >
+      <div
+        class="container row flex-column-reverse flex-lg-row fresh-product-style"
+      >
+        <div class="half-width-content col-lg-6 special-section-padding">
+          <h2
+            class="intro-title other-section-title theme-color observer h-anim-left"
+          >
+            امکان پیگیری سفارش با برقرای تماس تلفنی
+          </h2>
+          <p class="intro-p pt-2 pb-2 observer p-anim-left">
+            لورم ایپسوم متن ساختگی با تولید نامفهوم از صنعت چاپ، و با استفاده از
+            طراحان گرافیک چاپگرها و بلکه روزنامه و مجلهصنعت ساختگی
+          </p>
+          <div class="intro-links mt-2 mt-lg-5">
+            <a
+              href="tel:+98 912 345 67 88"
+              class="btn theme-bg text-white intro-link-padding observer button-anim-left"
+            >
+              912 345 67 88 98+
+            </a>
+          </div>
+        </div>
+        <div class="half-width-content col-lg-6">
+          <img
+            src="images/suport.png"
+            alt="Intro image"
+            class="img-fluid except-margin observer img-anim-up"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="container-fluid mx-auto row section-padding justify-content-center"
+    >
+      <div
+        class="half-width-content last-section-part col-lg-6 d-flex p-0 p-lg-3 pt-0 pb-0 mb-3 mb-lg-0 pt-lg-0 pb-lg-0"
+      >
+        <div
+          class="theme-bg dots-bg below-full m-0 d-flex flex-column justify-content-center text-part-padd suport-text"
+        >
+          <p
+            class="text-white m-0 d-inline p-4 p-lg-5 pt-lg-0 pb-lg-0 pt-0 pb-0"
+          >
+            از ما <span>حمایت</span> و به پیشرفتمان کمک کنید
+          </p>
+          <div class="p-4 p-lg-5 pt-lg-0 pb-lg-0 pt-0 pb-0">
+            <a
+              href="pages/order.html"
+              class="btn bg-white order-btn-submit mt-5"
+              >ثبت سفارش</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="half-width-content last-section-part col-lg-6"></div>
+    </div>
+    <footer
+      class="contianer-fluid d-flex flex-column align-items-center footer-style"
+    >
+      <div class="container p-0 row">
+        <div class="logo-part footer-content p-2 p-lg-0">
+          <a href="index.html">
+            <img src="images/Logo.svg" alt="Logo image" class="footer-logo" />
+          </a>
+          <p class="sub-logo-footer">
+            سادگی لورم متن ایپسوم متن ساختگی با تولید سادگی نامفهوصنعت از صنعت و
+            ایپسوم با استفاده
+          </p>
+        </div>
+        <div class="nav-part footer-content">
+          <div
+            class="navbar m-0 d-flex flex-column align-items-start flex-lg-row justify-content-lg-center navbar row justify-content-center"
+          >
+            <ul class="navbar-nav pt-4 pb-0 p-2 p-lg-0 col-lg-4">
+              <h3 class="footer-nav-title">منو</h3>
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd"
+                  >صفحه اصلی</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd"
+                  >سفارشات</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd"
+                  >سوالات متداول</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd"
+                  >در باره ما</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd"
+                  >تماس با ما</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav pt-4 pb-0 p-2 p-lg-0 col-lg-4">
+              <h3 class="footer-nav-title">قالب ها</h3>
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd"
+                  >قالب اول</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd"
+                  >قالب دوم</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd">
+                  قالب سوم</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd">
+                  قالب چهارم</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd"
+                  >قالب پنجم</a
+                >
+              </li>
+            </ul>
+            <ul class="navbar-nav pt-4 pb-0 p-2 p-lg-0 col-lg-4">
+              <h3 class="footer-nav-title">جوایز</h3>
+
+              <li class="nav-item">
+                <a href="javascript:void(0)" class="nav-link nav-link-padd"
+                  >برترین رستوران سال</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid border border-bottom-0 border-top-1 border-end-0 border-start-0 m-top-lg"
+      >
+        <div
+          class="copy-right-part m-0 d-flex flex-column flex-lg-row justify-content-center padd-top row container mx-auto"
+        >
+          <div class="legal text-center col-lg-6">
+            تمامی حقوق این وبسایت متعلق به
+            <a href="https://chomp.webflow.io/" class="theme-color">وب فلو</a>
+            میباشد
+          </div>
+          <div class="social mt-5 mt-lg-0 col-lg-6">
+            <ul class="d-flex justify-content-center m-0">
+              <li
+                class="social-item m-3 icon-style border rounded-circle text-center bg-white mt-0 mb-0"
+              >
+                <a href="instagram.com/" class="text-dark"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li
+                class="social-item m-3 icon-style border rounded-circle text-center bg-white mt-0 mb-0"
+              >
+                <a href="twitter.com/" class="text-dark">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li
+                class="social-item m-3 icon-style border rounded-circle text-center bg-white mt-0 mb-0"
+              >
+                <a href="youtube.com/" class="text-dark">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
       crossorigin="anonymous"
     ></script>
+    <script defer src="output/final.js"></script>
   </body>
 </html>
