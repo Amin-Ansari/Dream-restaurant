@@ -118,6 +118,7 @@ span.cart-pos {
   right: 0px;
   background-color: #33333360;
   transition: all 0.3s;
+  z-index: 1 !important;
 }
 .off-canvas {
   width: 100%;
@@ -419,4 +420,7 @@ input[type="number"] {
 }
 .observer {
   opacity: 0;
+}
+.sub-menu-index {
+  z-index: 1 !important;
 }
