@@ -11,6 +11,7 @@ import { scrollTheTitle } from "./function";
 import { guideElements } from "./elements";
 import { intersectedElements } from "./elements";
 import { introSectionElements } from "./elements";
+import { accButton } from "./elements";
 import { obs } from "./class";
 import { guideObserver } from "./class";
 import { simpleObserver } from "./class";
@@ -25,7 +26,5 @@ menuButtons.forEach((item) => item.addEventListener("click", selectTheButton));
 scrollTheTitle();
 
 guideElements.forEach((item) => guideObserver.observe(item));
-
 intersectedElements.forEach((item) => obs.observe(item));
-
 introSectionElements.forEach((item) => simpleObserver.observe(item));

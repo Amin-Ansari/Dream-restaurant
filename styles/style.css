@@ -433,9 +433,39 @@ input[type="number"] {
   background-size: contain;
 }
 .intro-title-section {
-  padding: 180px 5px !important;
+  padding: 80px 5px !important;
 }
 .intro-section-header {
   font-weight: 700;
-  font-size: calc(2.2rem + 0.5vw) !important;
+  font-size: calc(2.4rem + 0.5vw) !important;
+}
+.faq-wrapper {
+  padding: 20px 0px !important;
+}
+.accordion-menues {
+  padding: 0px 0px !important;
+}
+.acc-btn {
+  font-weight: 600 !important;
+  font-size: calc(0.9rem + 0.2vw) !important;
+}
+.acc-btn img {
+  transition: all 0.5s;
+}
+.lorem-p {
+  font-size: 1.1rem !important;
+  color: #7e828f;
+  text-align: justify;
+  padding: 30px 10px !important;
+  transition: all 0.5s !important;
+}
+.acc-item {
+  transition: all 0.5s !important;
+}
+.icon-plus {
+  opacity: 0.5;
+}
+.rotate-plus {
+  opacity: 1;
+  transform: rotate(20deg);
 }
