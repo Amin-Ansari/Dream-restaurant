@@ -36,7 +36,7 @@ export const simpleObserver = new IntersectionObserver(function (entries) {
 
 let storedItem = Symbol();
 let singleItem = new WeakMap();
-
+let orderInfo = Symbol();
 const theCardAddingElements = `
 <ul class="card-list"></ul>
 <div class="total-contianer">
@@ -53,6 +53,27 @@ export class Cart {
         number: undefined,
         price: undefined,
       });
+    this[orderInfo] = function () {
+      for (let element of this[storedItem]) {
+        basketContent.firstElementChild.insertAdjacentHTML(
+          "afterbegin",
+          `
+        <li class="card-item d-flex justify-content-between">
+<div class="order-info d-flex align-items-center">
+  <img src="..${element.image}" alt="Image of the order" class="order-image-style">
+<div class="info-context d-block">
+<h5 class="m-0 p-0">${element.name}</h5>
+<p class="m-0 p-0">${element.price}تومان</p>
+<p class="m-0 p-0">${element.number}عدد</p>
+</div>
+</div>
+<div class="delete-container d-flex align-items-center">
+  <button class="btn order-delete">حذف</button>
+</div>
+</li>`
+        );
+      }
+    };
   }
   storeToLocal() {
     let theLocal = JSON.parse(localStorage.getItem("basketItem"));
@@ -88,6 +109,7 @@ export class Cart {
       basketContent.classList.remove("justify-content-center");
       basketContent.classList.remove("align-items-center");
       basketContent.innerHTML = theCardAddingElements;
+      this[orderInfo]();
     } else {
       basketContent.innerHTML = "";
       basketContent.classList.add("justify-content-center");

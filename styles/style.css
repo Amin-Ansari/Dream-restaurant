@@ -523,3 +523,28 @@ button.theme-bg {
   width: 15%;
   padding: 0px 10px;
 }
+.card-item {
+  height: 84px !important;
+}
+.order-delete {
+  color: #ff8e4d !important;
+  font-weight: 500 !important;
+  font-size: 1.05rem;
+}
+.order-image-style {
+  width: 22%;
+  height: 93%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.info-context {
+  padding: 0px 10px;
+}
+.info-context h5 {
+  font-size: 1rem;
+  font-weight: 700 !important;
+  margin-bottom: 5px !important;
+}
+.info-context:nth-child(2) {
+  font-size: 0.85rem;
+}
