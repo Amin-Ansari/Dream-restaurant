@@ -40,6 +40,7 @@ introSectionElements.forEach((item) => simpleObserver.observe(item));
 let test = myBasket.basketLength;
 
 updateBasketLenth();
+myBasket.render();
 
 orderSubmitButton.forEach((item) =>
   item.addEventListener("click", function () {
@@ -63,5 +64,7 @@ orderSubmitButton.forEach((item) =>
       Number(orderNumber),
       Number(orderPrice)
     );
+    updateBasketLenth();
+    myBasket.render();
   })
 );

@@ -515,3 +515,11 @@ button.theme-bg {
   font-weight: 500 !important;
   font-size: 1.2rem;
 }
+.card-list {
+  height: 85%;
+  padding: 20px 10px;
+}
+.total-contianer {
+  width: 15%;
+  padding: 0px 10px;
+}
