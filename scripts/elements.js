@@ -14,3 +14,4 @@ export const guideElements = document.querySelectorAll(
 );
 export const intersectedElements = document.querySelectorAll(".observer");
 export const introSectionElements = document.querySelectorAll(".intro-observe");
+export const basketContent = document.querySelectorAll(".off-canvas-content");

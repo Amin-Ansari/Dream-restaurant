@@ -53,6 +53,7 @@ module.exports = () => {
 };
 module.exports = {
   entry: "./scripts/index.js",
+  mode: "development",
   output: {
     path: path.resolve(__dirname, "output"),
     filename: "final.js",

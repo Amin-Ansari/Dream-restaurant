@@ -32,3 +32,46 @@ export const simpleObserver = new IntersectionObserver(function (entries) {
     }
   }
 });
+
+let storedItem = Symbol();
+let singleItem = new WeakMap();
+export class Cart {
+  constructor() {
+    (this[storedItem] = []),
+      singleItem.set(this, {
+        name: undefined,
+        image: undefined,
+        number: undefined,
+        price: undefined,
+      });
+  }
+  storeToLocal() {
+    let theLocal = JSON.parse(localStorage.getItem("basketItem"));
+    if (!theLocal) {
+      this[storedItem].push(singleItem.get(this));
+      localStorage.setItem("basketItem", JSON.stringify(this[storedItem]));
+    } else {
+      this[storedItem] = theLocal;
+      for (let i = 0; i < this[storedItem].length; i++) {
+        if (this[storedItem][i].name === singleItem.get(this).name) {
+          this[storedItem][i].number += Number(singleItem.get(this).number);
+          localStorage.setItem("basketItem", JSON.stringify(this[storedItem]));
+        } else {
+          this[storedItem].push(singleItem.get(this));
+          localStorage.setItem("basketItem", JSON.stringify(this[storedItem]));
+        }
+      }
+    }
+  }
+  storeToSingle(itemName, itemImage, itemNumber, itemPrice) {
+    singleItem.get(this).name = itemName;
+    singleItem.get(this).image = itemImage;
+    singleItem.get(this).number = itemNumber;
+    singleItem.get(this).price = itemPrice;
+    this.storeToLocal();
+  }
+
+  get basketLength() {
+    return this[storedItem].length;
+  }
+}

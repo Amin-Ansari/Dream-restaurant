@@ -14,6 +14,8 @@ import { introSectionElements } from "./elements";
 import { obs } from "./class";
 import { guideObserver } from "./class";
 import { simpleObserver } from "./class";
+import { Cart } from "./class";
+import { basketContent } from "./elements";
 
 toggleButton.addEventListener("click", toggleSub);
 cartButton.addEventListener("click", toggleCart);
@@ -27,3 +29,5 @@ scrollTheTitle();
 guideElements.forEach((item) => guideObserver.observe(item));
 intersectedElements.forEach((item) => obs.observe(item));
 introSectionElements.forEach((item) => simpleObserver.observe(item));
+
+const myBasket = new Cart();
