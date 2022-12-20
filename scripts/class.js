@@ -53,8 +53,6 @@ export class Cart {
     } else {
       this[storedItem] = theLocal;
       for (let i = 0; i < this[storedItem].length; i++) {
-        console.log("i");
-        console.log(this[storedItem].length);
         if (this[storedItem][i].name == singleItem.get(this).name) {
           this[storedItem][i].number += Number(singleItem.get(this).number);
           localStorage.setItem("basketItem", JSON.stringify(this[storedItem]));
@@ -76,6 +74,8 @@ export class Cart {
   }
 
   get basketLength() {
+    let theLocal = JSON.parse(localStorage.getItem("basketItem"));
+    this[storedItem] = theLocal;
     return this[storedItem].length;
   }
 }

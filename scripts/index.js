@@ -17,6 +17,7 @@ import { simpleObserver } from "./class";
 import { Cart } from "./class";
 import { basketContent } from "./elements";
 import { orderSubmitButton } from "./elements";
+import { badges } from "./elements";
 
 toggleButton.addEventListener("click", toggleSub);
 cartButton.addEventListener("click", toggleCart);
@@ -32,6 +33,11 @@ intersectedElements.forEach((item) => obs.observe(item));
 introSectionElements.forEach((item) => simpleObserver.observe(item));
 
 const myBasket = new Cart();
+
+let test = myBasket.basketLength;
+
+console.log(test);
+badges.innerText == test;
 
 orderSubmitButton.forEach((item) =>
   item.addEventListener("click", function () {

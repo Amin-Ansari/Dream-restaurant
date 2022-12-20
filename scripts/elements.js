@@ -18,3 +18,4 @@ export const basketContent = document.querySelector(".off-canvas-content");
 export const orderSubmitButton = document.querySelectorAll(
   'input[value="اضافه کردن سفارش"]'
 );
+export const badges = document.querySelector(".badge");
