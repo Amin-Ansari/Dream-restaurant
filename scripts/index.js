@@ -49,18 +49,17 @@ orderSubmitButton.forEach((item) =>
         .firstElementChild.firstElementChild.innerHTML;
     let orderimage =
       item.parentElement.parentElement.parentElement.parentElement
-        .firstElementChild.firstElementChild.firstElementChild.src;
+        .firstElementChild.firstElementChild.firstElementChild;
     let orderNumber = item.previousElementSibling.value;
     let orderPrice =
       item.parentElement.parentElement.parentElement.firstElementChild
         .lastElementChild.innerHTML;
 
     orderPrice = orderPrice.split("تومان")[0];
-    orderimage = orderimage.split("/images")[1];
 
     myBasket.storeToSingle(
       orderName,
-      orderimage,
+      orderimage.src,
       Number(orderNumber),
       Number(orderPrice)
     );

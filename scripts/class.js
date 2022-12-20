@@ -60,7 +60,7 @@ export class Cart {
           `
         <li class="card-item d-flex justify-content-between">
 <div class="order-info d-flex align-items-center">
-  <img src="..${element.image}" alt="Image of the order" class="order-image-style">
+  <img src="${element.image}" alt="Image of the order" class="order-image-style">
 <div class="info-context d-block">
 <h5 class="m-0 p-0">${element.name}</h5>
 <p class="m-0 p-0">${element.price}تومان</p>
