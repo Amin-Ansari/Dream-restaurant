@@ -38,12 +38,18 @@ let storedItem = Symbol();
 let singleItem = new WeakMap();
 let orderInfo = Symbol();
 const theCardAddingElements = `
-<ul class="card-list"></ul>
-<div class="total-contianer">
-  <p class="d-inline-block total-price"></p>
-  تومان
+<ul class="card-list "></ul>
+<div class="total-contianer d-flex justify-content-between flex-wrap">
+<h3 class="total-sum-title m-0">قیمت کل:</h3>
+<div class="d-flex align-items-center">
+<p class="d-inline-block total-price m-0 ms-2"></p>
+تومان
 </div>
-</div>`;
+</div>
+<div class="p-1 mt-3 pay-btn">
+<button type="button" class="btn w-100 theme-bg text-white">تسویه حساب</button>
+</div>
+`;
 export class Cart {
   constructor() {
     (this[storedItem] = []),
