@@ -54,7 +54,6 @@ export function selectTheButton() {
     }
   }
 }
-
 export function scrollTheTitle() {
   let itemTitle = document.querySelectorAll(".title-menu");
   if (window.innerWidth >= 576) {
