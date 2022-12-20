@@ -109,6 +109,7 @@ export class Cart {
       basketContent.classList.remove("align-items-center");
       basketContent.innerHTML = theCardAddingElements;
       this[orderInfo]();
+      this.calculateTotal();
     } else {
       basketContent.innerHTML = "";
       basketContent.classList.add("justify-content-center");
@@ -135,6 +136,18 @@ export class Cart {
         } else {
         }
       }
+    }
+  }
+  calculateTotal() {
+    let theLocal = JSON.parse(localStorage.getItem("basketItem"));
+    let totalPrice = 0;
+    if (theLocal.length) {
+      for (let key of theLocal) {
+        totalPrice += key.number * Number(key.price);
+      }
+      const theTotalElement = (document.querySelector(
+        ".total-price"
+      ).innerHTML = totalPrice);
     }
   }
 
