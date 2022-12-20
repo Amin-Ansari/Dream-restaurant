@@ -19,6 +19,11 @@ import { basketContent } from "./elements";
 import { orderSubmitButton } from "./elements";
 import { badges } from "./elements";
 
+const myBasket = new Cart();
+const updateBasketLenth = function () {
+  badges.innerHTML = myBasket.basketLength;
+};
+
 toggleButton.addEventListener("click", toggleSub);
 cartButton.addEventListener("click", toggleCart);
 document.addEventListener("click", ifClickCanvas);
@@ -32,12 +37,9 @@ guideElements.forEach((item) => guideObserver.observe(item));
 intersectedElements.forEach((item) => obs.observe(item));
 introSectionElements.forEach((item) => simpleObserver.observe(item));
 
-const myBasket = new Cart();
-
 let test = myBasket.basketLength;
 
-console.log(test);
-badges.innerText == test;
+updateBasketLenth();
 
 orderSubmitButton.forEach((item) =>
   item.addEventListener("click", function () {

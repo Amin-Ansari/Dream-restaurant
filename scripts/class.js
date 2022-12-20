@@ -75,7 +75,11 @@ export class Cart {
 
   get basketLength() {
     let theLocal = JSON.parse(localStorage.getItem("basketItem"));
-    this[storedItem] = theLocal;
-    return this[storedItem].length;
+    if (theLocal) {
+      this[storedItem] = theLocal;
+      return this[storedItem].length;
+    } else {
+      return 0;
+    }
   }
 }
