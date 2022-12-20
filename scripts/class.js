@@ -56,15 +56,15 @@ export class Cart {
     this[orderInfo] = function () {
       for (let element of this[storedItem]) {
         basketContent.firstElementChild.insertAdjacentHTML(
-          "afterbegin",
+          "beforeend",
           `
-        <li class="card-item d-flex justify-content-between">
+        <li class="card-item d-flex justify-content-between mt-3 mb-3">
 <div class="order-info d-flex align-items-center">
   <img src="${element.image}" alt="Image of the order" class="order-image-style">
 <div class="info-context d-block">
 <h5 class="m-0 p-0">${element.name}</h5>
-<p class="m-0 p-0">${element.price}تومان</p>
-<p class="m-0 p-0">${element.number}عدد</p>
+<p class="m-0 p-0">${element.price}تومان </p>
+<p class="m-0 p-0">${element.number} عدد</p>
 </div>
 </div>
 <div class="delete-container d-flex align-items-center">
@@ -102,7 +102,6 @@ export class Cart {
     singleItem.get(this).price = itemPrice;
     this.storeToLocal();
   }
-
   render() {
     if (this.basketLength > 0) {
       basketContent.innerHTML = "";
@@ -124,6 +123,18 @@ export class Cart {
         alt="Attention arrow"
         class="d-block mb-5"
       />`;
+    }
+  }
+  remove(givenParameter) {
+    let theLocal = JSON.parse(localStorage.getItem("basketItem"));
+    if (theLocal) {
+      for (let i = 0; i < this[storedItem].length; i++) {
+        if (this[storedItem][i].name == givenParameter) {
+          this[storedItem].splice(i, 1);
+          localStorage.setItem("basketItem", JSON.stringify(this[storedItem]));
+        } else {
+        }
+      }
     }
   }
 

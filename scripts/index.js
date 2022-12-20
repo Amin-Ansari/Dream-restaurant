@@ -67,3 +67,14 @@ orderSubmitButton.forEach((item) =>
     myBasket.render();
   })
 );
+
+document.addEventListener("click", function (e) {
+  if (e.target.classList.contains("order-delete")) {
+    let orderName =
+      e.target.parentElement.previousElementSibling.firstElementChild
+        .nextElementSibling.firstElementChild.innerHTML;
+    myBasket.remove(orderName);
+    updateBasketLenth();
+    myBasket.render();
+  }
+});
