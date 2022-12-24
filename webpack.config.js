@@ -58,5 +58,4 @@ module.exports = {
     path: path.resolve(__dirname, "output"),
     filename: "final.js",
   },
-  devtool: false,
 };
