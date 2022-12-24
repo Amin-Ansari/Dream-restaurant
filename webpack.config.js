@@ -43,7 +43,7 @@ const config = {
 
 module.exports = () => {
   if (isProduction) {
-    config.mode = "production";
+    config.mode = "development";
 
     config.plugins.push(new WorkboxWebpackPlugin.GenerateSW());
   } else {
@@ -53,6 +53,7 @@ module.exports = () => {
 };
 module.exports = {
   entry: "./scripts/index.js",
+  mode: "development",
   output: {
     path: path.resolve(__dirname, "output"),
     filename: "final.js",

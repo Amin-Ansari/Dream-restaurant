@@ -38,7 +38,7 @@ let storedItem = Symbol();
 let singleItem = new WeakMap();
 let orderInfo = Symbol();
 const theCardAddingElements = `
-<ul class="card-list "></ul>
+<ul class="card-list"></ul>
 <div class="total-contianer d-flex justify-content-between flex-wrap">
 <h3 class="total-sum-title m-0">قیمت کل:</h3>
 <div class="d-flex align-items-center">
@@ -161,7 +161,11 @@ export class Cart {
     let theLocal = JSON.parse(localStorage.getItem("basketItem"));
     if (theLocal) {
       this[storedItem] = theLocal;
-      return this[storedItem].length;
+      let totalLenght = 0;
+      for (let element of this[storedItem]) {
+        totalLenght += Number(element.number);
+      }
+      return totalLenght;
     } else {
       return 0;
     }
