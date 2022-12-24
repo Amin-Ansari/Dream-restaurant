@@ -84,7 +84,7 @@ export class Cart {
   storeToLocal() {
     let theLocal = JSON.parse(localStorage.getItem("basketItem"));
     this[storedItem] = theLocal;
-    if (this[storedItem].length <= 0) {
+    if (!theLocal) {
       this[storedItem].push(singleItem.get(this));
       localStorage.setItem("basketItem", JSON.stringify(this[storedItem]));
     } else {
