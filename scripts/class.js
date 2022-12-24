@@ -83,11 +83,12 @@ export class Cart {
   }
   storeToLocal() {
     let theLocal = JSON.parse(localStorage.getItem("basketItem"));
-    if (theLocal.length <= 0) {
+    this[storedItem] = theLocal;
+    console.log(this[storedItem].length);
+    if (this[storedItem].length <= 0) {
       this[storedItem].push(singleItem.get(this));
       localStorage.setItem("basketItem", JSON.stringify(this[storedItem]));
     } else {
-      this[storedItem] = theLocal;
       for (let i = 0; i < this[storedItem].length; i++) {
         if (this[storedItem][i].name == singleItem.get(this).name) {
           this[storedItem][i].number += Number(singleItem.get(this).number);
@@ -97,6 +98,7 @@ export class Cart {
         if (i == this[storedItem].length - 1) {
           this[storedItem].push(singleItem.get(this));
           localStorage.setItem("basketItem", JSON.stringify(this[storedItem]));
+          break;
         }
       }
     }
