@@ -3,7 +3,7 @@
 const path = require("path");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin");
 
-const isProduction = process.env.NODE_ENV == "production";
+const isProduction = process.env.NODE_ENV == "development";
 
 const stylesHandler = "style-loader";
 
