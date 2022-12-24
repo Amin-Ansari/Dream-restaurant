@@ -124,7 +124,7 @@
             let theLocal = JSON.parse(localStorage.getItem("basketItem"));
             this[storedItem] = theLocal;
             if (!theLocal) {
-              this[storedItem].push(singleItem.get(this));
+              this[storedItem] = [singleItem.get(this)];
               localStorage.setItem(
                 "basketItem",
                 JSON.stringify(this[storedItem])
